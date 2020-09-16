@@ -6,13 +6,20 @@ class App extends Component {
   state= {
     cohortName: 'Tarjan',
     salutation: 'Hello!',
-    name: 'Kieran'
+    name: 'Kieran',
+    whereILive: 'Minneapolis',
+    pizzaTopping: 'Sausage',
   }
   render() {
     return (
       <div>
         <h1>{this.state.cohortName} learns state with objects</h1>
-    <div>{this.state.salutation} my name is {this.state.name}</div>
+    <div>{this.state.salutation} </div>
+    <ul>
+      <li> My name is {this.state.name}</li>
+    <li>I live in {this.state.whereILive}</li>
+    <li>My favorite pizza topping is {this.state.pizzaTopping}</li>
+    </ul>
       </div>
     )
   }
